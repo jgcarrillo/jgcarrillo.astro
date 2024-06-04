@@ -1,6 +1,6 @@
 <div align="center">
 
-![Svelte Badge](https://img.shields.io/badge/Astro-17191E?logo=astro&logoColor=fff&style=flat)
+![Astro Badge](https://img.shields.io/badge/Astro-17191E?logo=astro&logoColor=fff&style=flat)
 ![GitHub stars](https://img.shields.io/github/stars/jgcarrillo/jgcarrillo.astro)
 ![GitHub issues](https://img.shields.io/github/issues/jgcarrillo/jgcarrillo.astro)
 ![GitHub forks](https://img.shields.io/github/forks/jgcarrillo/jgcarrillo.astro)
