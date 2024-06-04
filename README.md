@@ -15,4 +15,4 @@
 - [**Typescript**](https://www.typescriptlang.org/) - JavaScript with syntax for types.
 - [**Tailwindcss**](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML.
 - [**Tabler Icons**](https://tabler.io/icons) - Pixel-perfect icons for web design.
-- [**Fontsource**]((https://tabler.io/icons) - Open-Source fonts in neatly bundled NPM packages.
+- [**Fontsource**](https://tabler.io/icons) - Open-Source fonts in neatly bundled NPM packages.
