@@ -1,0 +1,30 @@
+---
+import GithubIcon from '@/components/icons/GitHubIcon.astro';
+import LinkedinIcon from '@/components/icons/LinkedInIcon.astro';
+import MastodonIcon from '@/components/icons/MastodonIcon.astro';
+import StackoverflowIcon from '@/components/icons/StackoverflowIcon.astro';
+import TwitterIcon from '@/components/icons/TwitterIcon.astro';
+---
+
+<footer class="my-20">
+  <div class="flex flex-row justify-center items-center gap-8 mb-4">
+    <a href="https://github.com/jgcarrillo/" target="_blank">
+      <GithubIcon />
+    </a>
+    <a href="https://stackoverflow.com/users/18326020/jgcarrillo" target="_blank">
+      <StackoverflowIcon />
+    </a>
+    <a href="https://es.linkedin.com/in/jgcarrilloweb" target="_blank">
+      <LinkedinIcon />
+    </a>
+    <a href="https://twitter.com/jgcarrillo_" target="_blank">
+      <TwitterIcon />
+    </a>
+    <a rel="me" href="https://mastodon.social/@jgcarrillo" target="_blank">
+      <MastodonIcon />
+    </a>
+  </div>
+  <p class="text-sm md:text-normal text-center text-gray-400 font-thin">
+    Made with Astro 💚 Jorge Gómez 2024 &copy;
+  </p>
+</footer>
