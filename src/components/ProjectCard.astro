@@ -20,7 +20,7 @@ const { name, description, icon, tags, url, githubUrl } = Astro.props;
       <div class="flex items-center space-x-2">
         {icon && <span class="size-6">{icon}</span>}
         <a
-          class="group flex items-center gap-[6px] font-bold hover:underline underline-offset-[5px] decoration-dotted"
+          class="group flex items-center gap-[6px] font-medium hover:underline underline-offset-[5px] decoration-dotted"
           href={url}
         >
           <span>{name}</span>
@@ -39,7 +39,7 @@ const { name, description, icon, tags, url, githubUrl } = Astro.props;
         )
       }
     </div>
-    <p class="text-gray-500 dark:text-white">{description}</p>
+    <p class="text-gray-500 text-sm dark:text-white">{description}</p>
     <div class="hidden md:flex space-x-2">
       {
         tags.map((tag) => (
