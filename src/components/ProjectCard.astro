@@ -18,22 +18,36 @@ const { name, description, icon, tags, url, githubUrl } = Astro.props;
   <div class="flex flex-col space-y-3">
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-2">
-        <span class="size-6">icon</span>
+        {icon && <span class="size-6">{icon}</span>}
         <a
           class="group flex items-center gap-[6px] font-bold hover:underline underline-offset-[5px] decoration-dotted"
           href={url}
         >
           <span>{name}</span>
-          <ArrowUpRight
-            class="size-4 text-gray-500 opacity-50 group-hover:opacity-100 group-hover:translate-x-[1.5px] transition duration-200"
-          />
+          {
+            url && (
+              <ArrowUpRight class="size-4 text-gray-500 opacity-50 group-hover:opacity-100 group-hover:translate-x-[1.5px] transition duration-200 dark:text-white" />
+            )
+          }
         </a>
       </div>
-      <a href={githubUrl}>
-        <GithubIcon class="size-3" />
-      </a>
+      {
+        githubUrl && (
+          <a href={githubUrl}>
+            <GithubIcon class="size-3" />
+          </a>
+        )
+      }
     </div>
-    <p class="text-gray-500">{description}</p>
-    <div></div>
+    <p class="text-gray-500 dark:text-white">{description}</p>
+    <div class="hidden md:flex space-x-2">
+      {
+        tags.map((tag) => (
+          <span class="cursor-default rounded-md inline-flex border border-neutral-300 bg-neutral-200/50 px-2 py-1 font-mono text-xs font-medium text-neutral-600 dark:text-white dark:border-neutral-800 dark:bg-neutral-800/60">
+            {tag}
+          </span>
+        ))
+      }
+    </div>
   </div>
 </div>
