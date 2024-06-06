@@ -3,13 +3,44 @@
 ---
 
 <header class="w-full flex items-center justify-center mx-auto mt-8">
-  <nav class="flex gap-x-4 justify-center items-center text-lg">
-    <a class="hidden md:block transition hover:text-primary" href="">Experience</a>
-    <a class="hidden md:block transition hover:text-primary" href="">Projects</a>
-    <a class="transition hover:opacity-80" href="">
+  <nav class="flex gap-x-4 justify-center items-center text-lg text-gray-500">
+    <a
+      class="hidden md:block transition hover:text-primary hover:underline underline-offset-[5px] decoration-dotted"
+      href="/#experience">Experience</a
+    >
+    <a
+      class="hidden md:block transition hover:text-primary hover:underline underline-offset-[5px] decoration-dotted"
+      href="/#projects">Projects</a
+    >
+    <a class="transition hover:opacity-80" href="/">
       <img class="w-24" src="/jgcarrillo.png" alt="Logo jgcarrillo" />
     </a>
-    <a class="hidden md:block transition hover:text-primary" href="">About me</a>
-    <a class="hidden md:block transition hover:text-primary" href="">Contact</a>
+    <a
+      class="hidden md:block transition hover:text-primary hover:underline underline-offset-[5px] decoration-dotted"
+      href="/#talks">Talks</a
+    >
+    <a
+      class="hidden md:block transition hover:text-primary hover:underline underline-offset-[5px] decoration-dotted"
+      href="/#about-me">About me</a
+    >
   </nav>
 </header>
+
+<script>
+  // In case you want to select the current a clicked
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   const links = document.querySelectorAll('a');
+
+  //   links.forEach(function (link) {
+  //     link.addEventListener('click', function (event) {
+  //       links.forEach(function (l) {
+  //         l.classList.remove('underline');
+  //         l.classList.remove('text-primary');
+  //       });
+
+  //       link.classList.add('underline');
+  //       link.classList.add('text-primary');
+  //     });
+  //   });
+  // });
+</script>

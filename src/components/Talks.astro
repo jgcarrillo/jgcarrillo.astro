@@ -1,5 +1,20 @@
 ---
+import SectionTitle from '@/components/SectionTitle.astro';
+import TalkItem from '@/components/TalkItem.astro';
 
+const TALKS = [
+  {
+    title: 'Create your own metaverse with React Three Fiber',
+    link: 'https://www.meetup.com/es-ES/murciadev/events/291141556/',
+    location: '@Coworking Murcia Emprendedora',
+    datetime: 'February 9, 2023 - 19:30',
+    icon: 'react',
+  },
+];
 ---
 
-<h2 class="text-center text-2xl font-bold underline underline-offset-4 mb-20">Tech Talks</h2>
+<SectionTitle title="Talks" />
+
+<div>
+  {TALKS.map((talk) => <TalkItem {...talk} />)}
+</div>

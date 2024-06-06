@@ -1,5 +1,45 @@
 ---
+import SectionTitle from '@/components/SectionTitle.astro';
+import ProjectCard from '@/components/ProjectCard.astro';
 
+const PROJECTS = [
+  {
+    name: 'Joserrabot',
+    description: '✨ Esto es una descripción',
+    icon: 'Prueba',
+    tags: ['next.js', 'vue', 'tailwindcss'],
+    url: 'Prueba',
+    githubUrl: 'Prueba',
+  },
+  {
+    name: 'Angular CryptoAPI',
+    description: '💄 Esto es otra descripción',
+    icon: 'Prueba',
+    tags: ['next.js', 'vue', 'tailwindcss'],
+    url: 'Prueba',
+    githubUrl: 'Prueba',
+  },
+  {
+    name: 'Reverse Recipes',
+    description: '💄 Esto es otra descripción',
+    icon: 'Prueba',
+    tags: ['next.js', 'vue', 'tailwindcss'],
+    url: 'Prueba',
+    githubUrl: 'Prueba',
+  },
+  {
+    name: 'Task control',
+    description: '💄 Esto es otra descripción',
+    icon: 'Prueba',
+    tags: ['next.js', 'vue', 'tailwindcss'],
+    url: 'Prueba',
+    githubUrl: 'Prueba',
+  },
+];
 ---
 
-<h2 class="text-center text-2xl font-bold underline underline-offset-4 mb-20">Projects</h2>
+<SectionTitle title="Projects" />
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+  {PROJECTS.map((project) => <ProjectCard {...project} />)}
+</div>

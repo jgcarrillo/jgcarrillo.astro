@@ -1,27 +1,28 @@
 ---
 import ExperienceItem from '@/components/ExperienceItem.astro';
+import SectionTitle from '@/components/SectionTitle.astro';
 
 const EXPERIENCE = [
   {
     date: 'December 2022 - Present',
     title: 'Front-End Developer',
     company: '@Zapp Studio',
+    link: 'https://zapp-studio.com/',
     description:
       "In my current role, I'm deeply immersed in the development of an agricultural project leveraging Angular 14. Our frontend work revolves around Bootstrap and Ionic, ensuring a seamless user experience. Additionally, I develop user-friendly administration dashboards using Nuxt 2 and Vuetify. These dashboards offer an intuitive interface for user role management, content administration, and client maintenance. ",
-    link: 'https://zapp-studio.com/',
   },
   {
     date: 'March 2022 - November 2022',
     title: 'Web Developer',
     company: '@Capgemini',
+    link: 'https://www.capgemini.com/es-es/',
     description:
       'I started in Capgemini as an intern, researching about Three.js and 3D development using Angular Three and NgRx. I have been working on a 3D project with animations, physics, collisions and state management. As the application was scaling, I decided to migrated the project from Angular to React to improve the performance with React Three Fiber library, using TypeScript, Redux, Node.js with Express and Mongo DB Atlas. ',
-    link: 'https://www.capgemini.com/es-es/',
   },
 ];
 ---
 
-<h2 class="text-center text-2xl font-bold underline underline-offset-4 mb-20">Experience</h2>
+<SectionTitle title="Experience" />
 
 <ol class="relative border-s border-green-200">
   {

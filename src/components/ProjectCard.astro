@@ -1,0 +1,39 @@
+---
+import GithubIcon from '@/components/icons/GitHubIcon.astro';
+import ArrowUpRight from '@/components/icons/ArrowUpRight.astro';
+
+interface Props {
+  name: string;
+  description: string;
+  icon: string;
+  tags: Array<string>;
+  url: string;
+  githubUrl: string;
+}
+
+const { name, description, icon, tags, url, githubUrl } = Astro.props;
+---
+
+<div class="border rounded-md border-neutral-300 px-3 py-4">
+  <div class="flex flex-col space-y-3">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <span class="size-6">icon</span>
+        <a
+          class="group flex items-center gap-[6px] font-bold hover:underline underline-offset-[5px] decoration-dotted"
+          href={url}
+        >
+          <span>{name}</span>
+          <ArrowUpRight
+            class="size-4 text-gray-500 opacity-50 group-hover:opacity-100 group-hover:translate-x-[1.5px] transition duration-200"
+          />
+        </a>
+      </div>
+      <a href={githubUrl}>
+        <GithubIcon class="size-3" />
+      </a>
+    </div>
+    <p class="text-gray-500">{description}</p>
+    <div></div>
+  </div>
+</div>
