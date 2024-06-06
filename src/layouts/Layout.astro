@@ -46,6 +46,8 @@ const { title } = Astro.props;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    @apply min-h-screen bg-neutral-100 dark:bg-neutral-900;
   }
 
   @media (prefers-reduced-motion: reduce) {

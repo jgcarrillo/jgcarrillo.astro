@@ -18,19 +18,21 @@ const { title, company, description, link, date } = Astro.props;
   >
   </div>
   <time
-    class="mb-1 text-sm font-mono font-normal leading-none tracking-tight text-gray-500 dark:text-white"
+    class="mb-2 text-sm font-mono font-normal text-neutral-600 leading-none tracking-tight dark:text-neutral-400"
     >{date}</time
   >
-  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-    {title}
-  </h3>
-  <h4 class="group text-pretty text-sm text-primary hover:opacity-80 mb-2">
-    <a class="flex items-center" href={link} target="_blank">
-      <span>{company}</span>
-      <ArrowUpRight
-        class="size-4 text-primary opacity-50 group-hover:opacity-100 group-hover:translate-x-[1.5px] transition duration-200"
-      />
-    </a>
-  </h4>
-  <p class="mb-4 text-sm text-gray-500 dark:text-white text-pretty" set:html={description} />
+  <div class="mt-2 flex flex-col space-y-0.5">
+    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+      {title}
+    </h3>
+    <h4 class="group text-pretty text-sm text-primary hover:opacity-80 mb-2">
+      <a class="flex items-center" href={link} target="_blank">
+        <span>{company}</span>
+        <ArrowUpRight
+          class="size-4 text-primary opacity-50 group-hover:opacity-100 group-hover:translate-x-[1.5px] transition duration-200"
+        />
+      </a>
+    </h4>
+  </div>
+  <p class="mb-4 mt-3 text-sm dark:text-neutral-400 text-pretty" set:html={description} />
 </div>
