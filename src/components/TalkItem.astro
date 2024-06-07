@@ -22,16 +22,16 @@ const IconComponent = icons[icon];
 <div class="mb-6">
   <a
     href={link}
-    class="flex items-center gap-x-2 text-primary hover:opacity-80 text-xl mb-2"
+    class="flex items-center gap-x-2 text-primary text-xl mb-2 hover:underline underline-offset-[5px] decoration-dotted"
     target="_blank"
   >
     {IconComponent && <IconComponent />}
     <h3 class="font-bold">{title}</h3>
   </a>
-  <p class="text-gray-500 dark:text-white font-light dark:font-thin md:text-lg">
+  <p class="text-gray-500 dark:text-white font-light dark:font-light md:text-lg">
     {location}
   </p>
-  <p class="text-gray-500 dark:text-white text-sm font-light dark:font-thin">
+  <p class="text-gray-500 dark:text-white text-sm font-light dark:font-light">
     {datetime}
   </p>
 </div>
