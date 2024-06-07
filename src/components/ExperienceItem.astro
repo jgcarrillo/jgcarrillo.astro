@@ -26,15 +26,15 @@ const { title, company, description, link, date } = Astro.props;
       {title}
     </h3>
     <h4
-      class="group text-pretty text-sm text-neutral-600 hover:opacity-100 duration-150 dark:text-white dark:opacity-80 dark:hover:opacity-100 dark:hover:text-white hover:text-black mb-2"
+      class="group text-pretty text-sm mb-2 text-neutral-600 duration-150 hover:opacity-100 hover:text-black dark:text-white dark:opacity-80 dark:hover:opacity-100 dark:hover:text-white"
     >
       <a class="flex items-center" href={link} target="_blank">
         <span>{company}</span>
         <ArrowUpRight
-          class="size-4 group-hover:opacity-100 group-hover:translate-x-[1.5px] transition duration-150"
+          class="size-4 transition duration-150 group-hover:opacity-100 group-hover:translate-x-[1.5px]"
         />
       </a>
     </h4>
   </div>
-  <p class="mb-4 mt-3 text-sm dark:text-neutral-400 text-pretty" set:html={description} />
+  <p class="mb-4 mt-3 text-sm text-pretty dark:text-neutral-400" set:html={description} />
 </div>

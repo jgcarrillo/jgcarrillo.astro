@@ -20,13 +20,13 @@ const { name, description, icon, tags, url, githubUrl } = Astro.props;
       <div class="flex items-center space-x-2">
         {icon && <span class="size-6">{icon}</span>}
         <a
-          class="group flex items-center gap-[6px] font-medium hover:underline underline-offset-[5px] decoration-dotted"
+          class="group flex items-center gap-[6px] underline-offset-[5px] decoration-dotted font-medium hover:underline"
           href={url}
         >
           <span>{name}</span>
           {
             url && (
-              <ArrowUpRight class="size-4 text-neutral-500 opacity-50 group-hover:opacity-100 group-hover:translate-x-[1.5px] transition duration-200 dark:text-white" />
+              <ArrowUpRight class="size-4 text-neutral-500 transition duration-200 opacity-50 group-hover:opacity-100 group-hover:translate-x-[1.5px] dark:text-white" />
             )
           }
         </a>
