@@ -1,4 +1,27 @@
 <div align="center">
+<a href="https://jgcarrillo.com">
+<img src="public/images/readme_space.png">
+</a>
+<p></p>
+</div>
+
+<div align="center">
+    <a href="https://jgcarrillo.com" target="_blank">
+        Website
+    </a>
+    <span>&nbsp;⁘&nbsp;</span>
+    <a href="https://github.com/jgcarrillo/jgcarrillo.astro?tab=readme-ov-file#-stack">
+        Stack
+    </a>
+    <span>&nbsp;⁘&nbsp;</span>
+    <a href="https://twitter.com/jgcarrillo_">
+        X (formerly Twitter)
+    </a>
+</div>
+
+</p>
+
+<div align="center">
 
 ![Astro Badge](https://img.shields.io/badge/Astro-17191E?logo=astro&logoColor=fff&style=flat)
 ![GitHub stars](https://img.shields.io/github/stars/jgcarrillo/jgcarrillo.astro)
