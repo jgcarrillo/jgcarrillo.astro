@@ -1,5 +1,5 @@
 ---
-import ArrowUpRight from '@/components/icons/ArrowUpRight.astro';
+import ArrowUpRight from "@/components/icons/ArrowUpRight.astro";
 
 interface Props {
   title: string;
@@ -7,9 +7,10 @@ interface Props {
   description: string;
   link?: string;
   date: string;
+  yoe: string;
 }
 
-const { title, company, description, link, date } = Astro.props;
+const { title, company, description, link, date, yoe } = Astro.props;
 ---
 
 <div>
@@ -20,6 +21,10 @@ const { title, company, description, link, date } = Astro.props;
   <time
     class="mb-2 text-sm font-mono font-normal text-neutral-600 leading-none tracking-tight dark:text-neutral-400"
     >{date}</time
+  >
+  <span
+    class="text-xs italic font-mono text-neutral-600 leading-none tracking-tight dark:text-neutral-400"
+    >{yoe}</span
   >
   <div class="mt-2 flex flex-col space-y-0.5">
     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
@@ -36,5 +41,8 @@ const { title, company, description, link, date } = Astro.props;
       </a>
     </h4>
   </div>
-  <p class="mb-4 mt-3 text-sm text-pretty dark:text-neutral-400" set:html={description} />
+  <p
+    class="mb-4 mt-3 text-sm text-pretty dark:text-neutral-400"
+    set:html={description}
+  />
 </div>
