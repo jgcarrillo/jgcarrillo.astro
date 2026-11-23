@@ -1,11 +1,4 @@
 <div align="center">
-<a href="https://jgcarrillo.com">
-<img src="public/images/readme_space.png">
-</a>
-<p></p>
-</div>
-
-<div align="center">
     <a href="https://jgcarrillo.com" target="_blank">
         Website
     </a>
